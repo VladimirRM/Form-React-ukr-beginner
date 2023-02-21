@@ -15,6 +15,8 @@ function App() {
   function RegisterForm() {
     const [user, setUserData] = useState({ email: "", password: "" });
 
+
+
     const setUserEmail = (e) => {
       const email = e.target.value;
       setUserData({
@@ -27,6 +29,9 @@ function App() {
         ...user.password
       });
     };
+    const handleFormSubmit = ()=>{
+      const {email,password}
+    }
 
     return (
       <div>
