@@ -1,6 +1,7 @@
 import "./App.css";
 import ConfirmDialog from "./ConfirmDialog";
 import RegisterForm from "./RegisterForm";
+import React,{useState} from "react";
 
 function App() {
   return (
@@ -12,6 +13,16 @@ function App() {
     </div>
   );
   function RegisterForm() {
+
+
+    const [user,setUserData]=useState({email:'', password:''})
+
+    const setUserEmail = ()=>{
+      
+    }
+    const setUserPassword = ()=>{
+
+    }
     return (
       <div>
         <h1>Please, register</h1>
@@ -21,6 +32,7 @@ function App() {
             label="label"
             type="email"
             onChange={console.log()}
+            value={user.email}
             required={true}
           />
           <input
@@ -28,6 +40,8 @@ function App() {
             label="password"
             type="password"
             onChange={console.log()}
+            value={user.password}
+
             required={true}
           />
           <button>Submit</button>
