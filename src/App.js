@@ -31,7 +31,7 @@ function App() {
             name="email"
             label="label"
             type="email"
-            onChange={console.log()}
+            onChange={setUserEmail}
             value={user.email}
             required={true}
           />
@@ -39,7 +39,7 @@ function App() {
             name="pwd"
             label="password"
             type="password"
-            onChange={console.log()}
+            onChange={setUserPassword}
             value={user.password}
 
             required={true}
